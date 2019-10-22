@@ -36,23 +36,23 @@ MongoDB Compass Community
 # API Usage
 
 Get the folder tree for a given user by id: <br/>
-/userid-content/{userID}/{root-folder-limit}/{sub-folder-limit}  <br/>
+POST /userid-content/{userID}/{root-folder-limit}/{sub-folder-limit}  <br/>
 Where:  <br/>
    userID - target userID <br/>
    root-folder-limit - number for limit of root folders query <br/>
    sub-folder-limit - number for limit of subfolders query <br/>
  <br/>
 Get the items counts for each folder: <br/>
-/item-count/{userID} <br/>
+POST /item-count/{userID} <br/>
 Where:  <br/>
    userID - target userID <br/>
     <br/>
 Get the items in a given folder, sorted by default by timestamp, newest first. <br/>
-/folder-content/{userID}/{root-folder-limit}/{sub-folder-limit} <br/>
+POST /folder-content/{userID}/{root-folder-limit}/{sub-folder-limit} <br/>
 Where:  <br/>
    userID - target userID <br/>
    root-folder-limit - number for limit of root folders query <br/>
    sub-folder-limit - number for limit of subfolders query <br/>
 
 Get the N newest items regardless of the folder they are in <br/>
-/newest-folder <br/>
+POST /newest-folder <br/>
